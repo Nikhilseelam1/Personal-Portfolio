@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 1</title>
-    <meta name="description" content="Case study page of Project" />
+
+    <title>Mini-GPT from Scratch | Seelam Nikhil</title>
+    <meta
+      name="description"
+      content="Mini-GPT from Scratch built using PyTorch. A GPT-style Transformer implementing attention, decoding, and GPT-2 weight loading."
+    />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -16,215 +20,172 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
               src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              alt="Seelam Nikhil Logo"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Seelam Nikhil</span>
         </div>
+
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link">Home</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link">About</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link">Projects</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./index.html#contact" class="header__link">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
+
+    <!-- HERO -->
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 1</h1>
+        <h1 class="heading-primary">
+          Mini-GPT from Scratch using PyTorch
+        </h1>
+
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Built a GPT-style Transformer completely from scratch, focusing on
+            understanding the internal mechanics of Large Language Models,
+            including attention, decoding strategies, and pretrained weight
+            loading.
           </p>
         </div>
+
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a
+            href="https://github.com/Nikhilseelam1/Mini-GPT-From-Scratch-Using-Pytorch"
+            class="btn btn--bg"
+            target="_blank"
+          >
+            View Code
+          </a>
         </div>
       </div>
     </section>
+
+    <!-- PROJECT DETAILS -->
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
+              alt="Mini GPT Architecture"
               class="project-details__showcase-img"
             />
           </div>
+
           <div class="project-details__content-main">
+
+            <!-- OVERVIEW -->
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
+
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                This project implements a GPT-style autoregressive Transformer
+                model entirely from scratch using PyTorch, without relying on
+                high-level libraries such as Hugging Face for model definition.
+                The goal of this project was to gain a deep, practical
+                understanding of Large Language Model internals and training
+                mechanics.
               </p>
+
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                The model includes custom implementations of self-attention,
+                multi-head attention, Layer Normalization, GELU activation,
+                positional embeddings, and feed-forward networks. A complete
+                training loop was built from the ground up, enabling full
+                control over forward and backward passes.
+              </p>
+
+              <p class="project-details__desc-para">
+                An autoregressive text generation pipeline was developed using
+                top-k sampling and temperature scaling to control output
+                diversity during inference. Additionally, GPT-2 pretrained
+                weights were manually loaded by mapping QKV projections,
+                feed-forward layers, and normalization parameters, demonstrating
+                a strong understanding of model weight structures.
+              </p>
+
+              <p class="project-details__desc-para">
+                This project highlights strong fundamentals in Transformer
+                architectures, LLM inference mechanics, and low-level model
+                engineering, making it highly relevant for modern AI and NLP
+                roles.
               </p>
             </div>
+
+            <!-- TOOLS -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h3 class="project-details__content-title">Tools & Technologies</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">PyTorch</div>
+                <div class="skills__skill">Deep Learning</div>
+                <div class="skills__skill">Large Language Models (LLMs)</div>
+                <div class="skills__skill">Transformer Architecture</div>
+                <div class="skills__skill">Self-Attention Mechanism</div>
+                <div class="skills__skill">Natural Language Processing</div>
+                <div class="skills__skill">Autoregressive Decoding</div>
+                <div class="skills__skill">Top-k Sampling</div>
+                <div class="skills__skill">Temperature Scaling</div>
+                <div class="skills__skill">GPT-2 Weight Mapping</div>
+                <div class="skills__skill">Model Training Loops</div>
               </div>
             </div>
+
+            <!-- LINKS -->
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Project Links</h3>
               <a
-                href="#"
+                href="https://github.com/Nikhilseelam1/Mini-GPT-From-Scratch-Using-Pytorch"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
               >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+                Code Repository
+              </a>
             </div>
+
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Seelam Nikhil</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              AI/ML Engineer | Building intelligent systems with data
             </p>
           </div>
         </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>

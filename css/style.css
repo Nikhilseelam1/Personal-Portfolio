@@ -702,3 +702,100 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+/* ============================= */
+/* CONTACT INFO FIX (TEXT MODE)  */
+/* ============================= */
+
+.contact__info {
+  max-width: 70rem;
+  margin: 6rem auto 0 auto;
+  text-align: center;
+}
+
+.contact__info-text {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.contact__info-text strong {
+  font-weight: 700;
+}
+
+.contact__info-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__info-text {
+    font-size: 1.6rem;
+  }
+}
+/* ===== CONTACT SECTION HEIGHT FIX ===== */
+
+#contact {
+  min-height: auto;        /* remove forced tall height */
+  padding-top: 1rem;       /* reduce top space */
+  padding-bottom: 1rem;    /* reduce bottom space */
+}
+
+/* Reduce extra spacing from template */
+.contact.sec-pad {
+  padding: 6rem 0;
+}
+
+/* Optional: slightly tighter on mobile */
+@media (max-width: 600px) {
+  #contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+
+/* Center & equal-size contact icons */
+
+.contact__socials {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* ✅ vertical centering */
+  gap: 1rem;
+}
+
+.contact__socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__socials img {
+  width: 60px;           /* ✅ equal width */
+  height: 60px;          /* ✅ equal height */
+  object-fit: contain;   /* ✅ prevents distortion */
+  display: block;
+}
+
+/* ===== HERO CTA BUTTON FIX ===== */
+
+.home-hero__cta {
+  display: flex;
+  gap: 2.4rem;              /* space between Projects & Resume */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;          /* mobile safety */
+}
+
+/* Make both buttons equal size */
+.home-hero__cta .btn {
+  min-width: 180px;         /* equal width */
+  text-align: center;
+}
+
+/* Optional: slightly reduce height difference */
+.home-hero__cta .btn--bg,
+.home-hero__cta .btn--theme {
+  padding: 1.6rem 3.2rem;
+}
